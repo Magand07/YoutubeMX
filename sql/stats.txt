@@ -1,0 +1,14 @@
+-- querys to results files
+
+select max(likes),canal from canalesLikes
+4470923	MasterChef 2017
+
+select max(views),canal from canalesxvi
+100912384	MasterChef 2017ews
+
+select views,canal from canalesxviews where lower(canal) like '%noti%' group by canal order by 1 desc
+    -  how many channels tagged with 'noticias'
+
+select canal,sum(views) from canalesxviews group by 1 order by 2 desc
+    - total vies of channels
+

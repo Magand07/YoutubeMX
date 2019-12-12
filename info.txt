@@ -1,0 +1,16 @@
+El archivo original es YTmexico, en videos.csv
+se recuperan los datos que nos interesan.
+Posteriormente este archivo de resultado lo pasamos por heavy.py
+donde nos genera los insert necesarios para hacer la carga a la 
+base de datos que previamente debe ser creada, asi como las tablas
+dentro de ese esquema.
+
+Para la lectura del json es necesario convert_file , donde en lugar
+de solo leerlo con el formato rescatamos lo que necesitamos, en 
+este caso el id y la categoria.
+
+Las graficas optenidas se pueden generar con graphs.py y 
+carga_array.py donde de los resultados de los querys de la base
+de datos podemos generar graficas de pastel, de barras, dona y 
+entre otras.
+
